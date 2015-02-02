@@ -39,7 +39,7 @@ if ( $critical > 0 ) {
 	print "WARNING - $warning/$number_of_hosts have pending changes, have not reported for more than 4 hours or changed on their last run|$performance_data";
 	exit 1;
 } elsif ( $ok > 0 ) {
-	print "$OK - $ok/$number_of_hosts are fine|$performance_data";
+	print "OK - $ok/$number_of_hosts are fine|$performance_data";
 	exit 0;
 } else {
 	print "UNKNOWN - I have no idea how you got here, did the password expire?|$performance_data";
